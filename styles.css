@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+  
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    text-align: center;
+}
+
+.sidebar,
+.header,
+.main-content {
+    border: 1px solid red;
+}
+
+.sidebar {
+    background-color: rgb(118, 118, 250);
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr;
+}
+
+.header {
+    background-color: coral;
+}
+
+.main-content {
+    background-color: aqua;
+}
+
+.logo {
+    margin: 10px 30px;
+    text-align: left;
+}
+
+.nav-container,
+.nav-extras {
+    margin: 0 30px;
+    text-align: left;
+}
+
+.nav-container > ul > li,
+.nav-extras > ul > li {
+    list-style: none;
+    margin: 10px 0;
+}
