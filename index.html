@@ -12,29 +12,31 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="logo">Dashboard</div>
+            <div id="dashboard"><img src="icons/view-dashboard.svg" class="logo">Dashboard</div>
             <div class="nav-container">
                 <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
+                    <li><img class="dashboard-icon" id="home" src="icons/home.svg">Home</li>
+                    <li><img class="dashboard-icon" src="icons/badge-account-horizontal.svg">Profile</li>
+                    <li><img class="dashboard-icon" src="icons/message-text.svg">Messages</li>
+                    <li><img class="dashboard-icon" src="icons/clock.svg">History</li>
+                    <li><img class="dashboard-icon" src="icons/note-multiple.svg">Tasks</li>
+                    <li><img class="dashboard-icon" src="icons/account-group.svg">Communities</li>
                 </ul>
             </div>
             <div class="nav-extras">
                 <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
+                    <li><img class="dashboard-icon" src="icons/cog.svg">Settings</li>
+                    <li><img class="dashboard-icon" src="icons/comment-question.svg">Support</li>
+                    <li><img class="dashboard-icon" src="icons/shield-account-variant.svg">Privacy</li>
                 </ul>
             </div>
         </div>
         <div class="header">
             <div class="search-container">
-                <div class="search-icon">search-icon</div>
-                <input type="text">
+                <input id="searchInput" type="text" name="searchInput" placeholder="Search" value="">
+                <button id="searchSubmit" type="submit" name="searchSubmit">
+                    <img class="search-icon"" src="icons/magnify.svg">
+                </button>
              </div>
             <div class="profile-container">
                 <div class="notif-bell">notif</div>
