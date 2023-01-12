@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <div id="dashboard"><img src="icons/view-dashboard.svg" class="logo">Dashboard</div>
+            <div id="dashboard-container"><img src="icons/view-dashboard.svg" class="logo">Dashboard</div>
             <div class="nav-container">
                 <ul>
                     <li><img class="dashboard-icon" id="home" src="icons/home.svg">Home</li>
@@ -35,17 +35,17 @@
             <div class="search-container">
                 <input id="searchInput" type="text" name="searchInput" placeholder="Search" value="">
                 <button id="searchSubmit" type="submit" name="searchSubmit">
-                    <img class="search-icon"" src="icons/magnify.svg">
+                    <img src="icons/magnify.svg">
                 </button>
              </div>
             <div class="profile-container">
-                <div class="notif-bell">notif</div>
-                <div class="pfp-icon">icon</div>
-                <div class="name">firstName lastName</div>
+                <img id="notif-bell" src="icons/bell-ring-outline.svg" alt="notif bell">
+                <img class="pfp pfp-small" src="images/blank-profile-photo.jpeg">
+                <div class="name">Sonny Werblin</div>
             </div>
             <div class="welcome-container">
-                <div class="pfp-icon">icon</div>
-                <div class="welcome-msg">Hi there, <br>firstName lastName (@username)</div>
+                <img class="pfp pfp-big" src="images/blank-profile-photo.jpeg">
+                <div class="welcome-msg">Hi there, <br>Sonny Werblin (@sonnywerb)</div>
             </div>
             <div class="button-container">
                 <button>New</button>
@@ -64,38 +64,41 @@
                 <div class="project-box">Project 6</div>
             </div>
 
-            <div class="announcements-container">
-                <div class="section-header">Announcements</div>
-                <div class="announcement">
-                    <h4>title 1</h3>
-                    <p>content</p>
+            <div class="secondary-container">
+                <div class="announcements-container">
+                    <div class="section-header">Announcements</div>
+                    <div class="announcement">
+                        <h4>title 1</h3>
+                        <p>content</p>
+                    </div>
+                    <div class="announcement">
+                        <h4>title 2</h3>
+                        <p>content</p>
+                    </div>
+                    <div class="announcement">
+                        <h4>title 3</h3>
+                        <p>content</p>
+                    </div>
                 </div>
-                <div class="announcement">
-                    <h4>title 2</h3>
-                    <p>content</p>
-                </div>
-                <div class="announcement">
-                    <h4>title 3</h3>
-                    <p>content</p>
-                </div>
-            </div>
-            <div class="trend-container">
-                <div class="section-header">Trending</div>
-                <div class="user">
-                    <h5>@username1</h5>
-                    <p>description</p>
-                </div>
-                <div class="user">
-                    <h5>@username2</h5>
-                    <p>description</p>
-                </div>
-                <div class="user">
-                    <h5>@username3</h5>
-                    <p>description</p>
-                </div>
-                <div class="user">
-                    <h5>@username4</h5>
-                    <p>description</p>
+                
+                <div class="trend-container">
+                    <div class="section-header">Trending</div>
+                    <div class="user">
+                        <h5>@username1</h5>
+                        <p>description</p>
+                    </div>
+                    <div class="user">
+                        <h5>@username2</h5>
+                        <p>description</p>
+                    </div>
+                    <div class="user">
+                        <h5>@username3</h5>
+                        <p>description</p>
+                    </div>
+                    <div class="user">
+                        <h5>@username4</h5>
+                        <p>description</p>
+                    </div>
                 </div>
             </div>
         </div>
