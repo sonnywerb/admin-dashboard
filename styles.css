@@ -63,6 +63,11 @@
     text-align: left;
 }
 
+.nav-extras {
+    position: absolute;
+    bottom: 3rem;
+}
+
 .nav-container > ul > li,
 .nav-extras > ul > li {
     list-style: none;
