@@ -1,7 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 100%;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 .container {
@@ -181,7 +183,7 @@ button:hover {
     height: 3.25rem;
     border-radius: 30px;
     border: none;
-    background-color: #34d399; /* emerald 400 */
+    background-color: #10b981; /* emerald 500 */
     color: #f0f9ff; /* sky 50 */
     font-size: 1.25rem;
     font-weight: 600;
@@ -192,7 +194,7 @@ button:hover {
 .main-content {
     display: grid;
     grid-template-columns: 2.5fr 1fr;
-    background-color: coral;
+    /* background-color: coral; */
 }
 
 .section-header {
@@ -203,10 +205,16 @@ button:hover {
 
 .projects-section {
     background-color: #f1f5f9; /* slate 100 */
+    min-width: 840px;
 }
 
 .project-header {
     padding: 2rem 0 0 1.8rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 .projects-container { 
@@ -219,20 +227,53 @@ button:hover {
 }
 
 .project {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     background-color: #f8fafc; /* slate 50 */
     height: 100%;
     width: 100%;
     border-radius: 10px;
     justify-self: center;
-    border-left: 10px solid #f87171; /* red 400 */
+    border-left: 10px solid #6ee7b7; /* emerald 300 */
     -webkit-box-shadow: 5px 5px 5px 0px #cbd5e1; /* slate 300 */
     -moz-box-shadow: 5px 5px 5px 0px rgba(203,213,225,1);
     box-shadow: 5px 5px 5px 0px rgba(203,213,225,1);
     text-align: left;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    transition: transform 200ms;
 }
 
-.project > h3 {
-    text-align: left;
+.project:hover {
+    transform: scale(1.025);
+    -webkit-transform: scale(1.025);
+    -moz-transform: scale(1.025);
+    -o-transform: scale(1.025);
+    -ms-transform: scale(1.025);
+}
+
+.project > a > p {
+    color: #000000c9;
+    padding-right: 3.5rem;
+    margin-top: .7rem;
+}
+
+.proj-btn-container {
+    position: absolute;
+    display: flex;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    align-self: flex-end;
+    gap: 1rem;
+}
+
+.proj-btn-container > button {
+    height: 1.8rem;
+    width: 1.8rem;
+    border: none;
+    background: none;
+    gap: 100px;
 }
 
 .secondary-container {
