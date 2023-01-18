@@ -221,7 +221,7 @@ a {
     display: grid;
     /* grid-template-columns: .8fr .8fr; */
     grid-template-columns: repeat(auto-fit, minmax(315px, 0.8fr));
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 2.3rem;
     height: 85%;
     padding: 1rem 1.8rem;
