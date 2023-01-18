@@ -200,7 +200,6 @@ a {
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     grid-template-rows: 1fr 1fr;
-    /* background-color: coral; */
 }
 
 .section-header {
@@ -220,7 +219,8 @@ a {
 
 .projects-container { 
     display: grid;
-    grid-template-columns: .8fr .8fr;
+    /* grid-template-columns: .8fr .8fr; */
+    grid-template-columns: repeat(auto-fit, minmax(315px, 0.8fr));
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 2.3rem;
     height: 85%;
@@ -234,6 +234,7 @@ a {
     background-color: #f8fafc; /* slate 50 */
     height: 100%;
     width: 100%;
+    /* max-width: 600px; */
     border-radius: 10px;
     justify-self: center;
     border-left: 10px solid #6ee7b7; /* emerald 300 */
@@ -255,7 +256,7 @@ a {
 }
 
 .project > a > p {
-    color: #000000c9;
+    color: #525252; /* neutral 600 */
     padding-right: 3.5rem;
     margin-top: .7rem;
 }
@@ -292,18 +293,18 @@ a {
 }
 
 .announcements-container {
-    box-sizing: border-box;
     display: grid;
     grid-template-rows: .8fr .8fr .8fr;
     grid-gap: .8rem;
     max-height: 450px;
     width: 100%;
+    max-width: 440px;
     border-radius: 10px;
     background-color: #f8fafc;
     -webkit-box-shadow: 5px 5px 5px 0px #cbd5e1; /* slate 300 */
     -moz-box-shadow: 5px 5px 5px 0px rgba(203,213,225,1);
     box-shadow: 5px 5px 5px 0px rgba(203,213,225,1);
-    padding: 1.5rem 1.3rem 1rem 1.3rem;
+    padding: 1.3rem 1.3rem 1rem 1.3rem;
 }
 
 .announcement {
@@ -321,6 +322,7 @@ a {
 
 .announcement > p {
     font-size: 1rem;
+    color: #525252; /* neutral 600 */
 }
 
 /************************Trending Section ************************/
@@ -331,8 +333,48 @@ a {
     text-align: left;
 }
 
+.trends-header {
+    padding-top: 0;
+}
+
 .trends-wrapper {
-    height: 100%;
+    max-height: 450px;
     width: 90%;
-    padding: 1rem 1.8rem;
+    padding: 1rem 1.8rem 0 1.8rem;
+}
+
+.trends-container {
+    display: grid;
+    grid-template-rows: .8fr .8fr .8fr .8fr;
+    grid-template-columns: max(110px) 2fr;
+    row-gap: .8rem;
+    max-height: 440px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    background-color: #f8fafc;
+    -webkit-box-shadow: 5px 5px 5px 0px #cbd5e1; /* slate 300 */
+    -moz-box-shadow: 5px 5px 5px 0px rgba(203,213,225,1);
+    box-shadow: 5px 5px 5px 0px rgba(203,213,225,1);
+    padding: 1.8rem 1.3rem 1.3rem 1.3rem;
+}
+
+.trends-container > img {
+    position: relative;
+    bottom: 10px;
+    left: 15px;
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 50%;
+}
+
+.user-profile {
+    grid-column: 2;
+    padding-top: .3rem;
+}
+
+.user-profile > p {
+    margin-top: .3rem;
+    font-size: 1rem;
+    color: #525252; /* neutral 600 */
 }
