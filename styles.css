@@ -319,6 +319,7 @@ a {
     border-bottom: 1px solid #d1d5db;
 }
 
+.announcement > P,
 .announcement > a > p {
     font-size: 1rem;
     color: #525252; /* neutral 600 */
