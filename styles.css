@@ -168,7 +168,7 @@ a {
     height: 5rem;
 }
 
-#notif-bell {
+.notif-bell {
     height: 2.2rem;
     width: 2.2rem;
     border: none;
@@ -213,7 +213,7 @@ a {
 
 .projects-section {
     background-color: #f1f5f9; /* slate 100 */
-    min-width: 840px;
+    min-width: 1092px;
     grid-row: 1 / 3;
 }
 
