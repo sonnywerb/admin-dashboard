@@ -309,7 +309,8 @@ a {
     padding: .8rem;
 }
 
-.announcement > h4 {
+.announcement > h4,
+.announcement > a > h4 {
     margin-bottom: .3rem;
 }
 
@@ -318,7 +319,7 @@ a {
     border-bottom: 1px solid #d1d5db;
 }
 
-.announcement > p {
+.announcement > a > p {
     font-size: 1rem;
     color: #525252; /* neutral 600 */
 }
@@ -375,4 +376,42 @@ a {
     margin-top: .3rem;
     font-size: 1rem;
     color: #525252; /* neutral 600 */
+}
+
+/*******************************Footer*******************************/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    min-width: 1400px;
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+.github {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.fa-github {
+    color: black;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
 }
