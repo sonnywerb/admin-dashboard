@@ -130,7 +130,7 @@ a {
     justify-content: end;
     align-items: center;
     padding-right: 6rem;
-    gap: 3rem;
+    gap: 2.5rem;
 }
 
 .welcome-container {
@@ -168,7 +168,7 @@ a {
     height: 5rem;
 }
 
-.notif-bell {
+#notif-button {
     height: 2.2rem;
     width: 2.2rem;
     border: none;

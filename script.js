@@ -1,15 +1,32 @@
 const likeButton = document.querySelectorAll(".like-button");
+const bookmarkButton = document.querySelectorAll(".bookmark-button");
+const notifButton = document.querySelector(".notif-bell");
+
 likeButton.forEach((btn) => {
     btn.addEventListener('click', (e) => {
         changeLikeButton(btn);
     })
 });
 
-const bookmarkButton = document.querySelectorAll(".bookmark-button");
 bookmarkButton.forEach((btn) => {
     btn.addEventListener('click', (e) => {
         changeBookmarkButton(btn);
     })
+});
+
+notifButton.addEventListener('click', (e) => {
+    if (notifButton.classList.contains("notif-on")) {
+        notifButton.src = "icons/bell-off-outline.svg";
+        notifButton.classList.remove("notif-on");
+        notifButton.classList.add("notif-off");
+        return;
+    }
+    if (notifButton.classList.contains("notif-off")) {
+        notifButton.src = "icons/bell-ring-outline.svg";
+        notifButton.classList.remove("notif-off");
+        notifButton.classList.add("notif-on");
+        return;
+    }
 });
 
 function changeBookmarkButton(btn) {
