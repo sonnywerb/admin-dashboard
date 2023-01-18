@@ -219,7 +219,6 @@ a {
 
 .projects-container { 
     display: grid;
-    /* grid-template-columns: .8fr .8fr; */
     grid-template-columns: repeat(auto-fit, minmax(315px, 0.8fr));
     grid-template-rows: 1fr 1fr;
     grid-gap: 2.3rem;
@@ -234,7 +233,6 @@ a {
     background-color: #f8fafc; /* slate 50 */
     height: 100%;
     width: 100%;
-    /* max-width: 600px; */
     border-radius: 10px;
     justify-self: center;
     border-left: 10px solid #6ee7b7; /* emerald 300 */
